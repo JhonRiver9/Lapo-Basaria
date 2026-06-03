@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ibu Basaria — Masakan Khas Batak</title>
+  <meta name="description" content="Masakan rumahan khas Batak Ibu Basaria. Menerima pesanan Ikan Mas Arsik, Ayam Gule, Babi Saksang, Babi Panggang, Sop Iga Babi, dan menu khas Batak lainnya." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header class="navbar">
+  <a href="index.html" class="logo">
+    <span class="logo-icon">🍲</span>
+    <span>
+      <b>Ibu Basaria</b>
+      <small>Masakan Khas Batak</small>
+    </span>
+  </a>
+
+  <button class="menu-toggle" id="menuToggle">☰</button>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="harga.html">Harga</a>
+    <a href="pesan.html">Pesan</a>
+    <a href="tentang.html">Tentang</a>
+  </nav>
+</header>
+
+<main>
+  <section class="page-header">
+    <h1>Pesan Makanan</h1>
+    <p>Isi form sederhana ini, nanti akan langsung diarahkan ke WhatsApp Ibu Basaria.</p>
+  </section>
+
+  <section class="section">
+    <form class="order-form" id="orderForm">
+      <label>Nama Lengkap</label>
+      <input type="text" id="nama" placeholder="Masukkan nama Anda" required>
+
+      <label>Nomor WhatsApp</label>
+      <input type="tel" id="telepon" placeholder="Contoh: 08123456789" required>
+
+      <label>Menu Pesanan</label>
+      <select id="menu" required>
+        <option value="">-- Pilih Menu --</option>
+        <option>Ikan Mas Arsik</option>
+        <option>Ayam Gule</option>
+        <option>Ayam Gota</option>
+        <option>Sayur Tauco Terong Udang Pete</option>
+        <option>Babi Kecap</option>
+        <option>Babi Saksang</option>
+        <option>Babi Panggang</option>
+        <option>Daun Singkong</option>
+        <option>Sop Iga Babi</option>
+        <option>Ikan Teri Kacang</option>
+        <option>Ketupat Ketan</option>
+        <option>Pesanan Custom / Banyak Menu</option>
+      </select>
+
+      <label>Jumlah Pesanan</label>
+      <input type="text" id="jumlah" placeholder="Contoh: 2 ekor / 1 kg / 20 biji" required>
+
+      <label>Tanggal Pengiriman</label>
+      <input type="date" id="tanggal" required onclick="this.showPicker()">
+
+      <label>Alamat Pengiriman</label>
+      <textarea id="alamat" placeholder="Masukkan alamat lengkap" required></textarea>
+
+      <label>Catatan Tambahan</label>
+      <textarea id="catatan" placeholder="Contoh: tidak terlalu pedas, untuk acara keluarga, dll"></textarea>
+
+      <button type="submit" class="btn primary full">Kirim ke WhatsApp</button>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© 2026 Ibu Basaria — Masakan Khas Batak</p>
+  <p>WhatsApp: <a href="https://wa.me/6282111318783" target="_blank">0821-1131-8783</a></p>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
